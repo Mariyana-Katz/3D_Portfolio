@@ -24,9 +24,9 @@ const Navbar = () => {
           }}
         >
           <img src={logo3} alt="logo" className="w-14 h-14 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer">
-            Mariyana
-            <span className="sm:block hidden">| Mariyana Katzarova</span>
+          <p className=" text-white text-[18px] font-bold cursor-pointer flex">
+            Mariyana &nbsp;
+            <span className="sm:block hidden"> | Mariyana Katzarova</span>
           </p>
         </Link>
         {/* navigation links */}
@@ -65,7 +65,10 @@ const Navbar = () => {
                     active === link.title ? "text-white" : "text-secondary"
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                   //this is for closing the menu when a link is clicked
-                  onClick={() => { setToggle(!toggle); setActive(link.title); }}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(link.title);
+                  }}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
