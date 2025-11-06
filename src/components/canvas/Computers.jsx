@@ -1,5 +1,7 @@
+//suspence is for lazy loading components
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
+//drei is a helper library for react-three-fiber
 import { OrbitControls, Preload, useGLTF, Html } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
@@ -32,6 +34,7 @@ const Computers = ({ isMobile }) => {
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
+  // Added a useEffect hook to detect screen size changes
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
@@ -42,6 +45,7 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
+    //Canvas is the main component that sets up the 3D rendering context
     <Canvas
       frameloop="demand"
       shadows
