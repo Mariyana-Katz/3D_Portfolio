@@ -52,12 +52,20 @@ const ComputersCanvas = () => {
   // State to track if the device is mobile
   const [isMobile, setIsMobile] = useState(false);
 
-  // Added a useEffect hook to detect screen size changes
+  // Added a useEffect as listener for changes in screen size
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    // Set the initial value of isMobile state
     setIsMobile(mediaQuery.matches);
+
+    // Define a callback function to handle changes in the media query
     const handleMediaQueryChange = (event) => setIsMobile(event.matches);
+
+    //Added the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Remove the listener when the component is unmounted
     return () =>
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
   }, []);
