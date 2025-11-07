@@ -20,14 +20,32 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-30`}>
             {" "}
             Full-stack Software Developer with a background in customer-focused
-            roles. Skilled in Java, React, and Spring Boot. Eager to contribute to
-            innovative, user-focused solutions while continuing to grow as a
+            roles. Skilled in Java, React, and Spring Boot. Eager to contribute
+            to innovative, user-focused solutions while continuing to grow as a
             developer.
           </p>
         </div>
-       
       </div>
-       <ComputersCanvas />
+      <ComputersCanvas />
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            {/* Animate the small circle to move up and down */}
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              // transition defines the timing and repetition of the animation
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
+            />
+          </div>
+        </a>
+      </div>
     </section>
   );
 };

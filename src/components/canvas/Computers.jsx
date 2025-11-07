@@ -11,16 +11,33 @@ const Computers = ({ isMobile }) => {
 
   return (
     <group>
-      <hemisphereLight intensity={0.15} groundColor="black" />
+      {/* stronger ambient to lift shadows */}
+      <ambientLight intensity={0.5} />
+
+      {/* soft fill from sky */}
+      <hemisphereLight intensity={0.35} groundColor="#222" />
+
+      {/* key light - brighter spotlight */}
       <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
+        position={[-10, 40, 20]}
+        angle={0.18}
+        penumbra={0.6}
+        intensity={1.8}
         castShadow
-        shadow-mapSize={1024}
+        shadow-mapSize={2048}
       />
-      <pointLight intensity={1} />
+
+      {/* directional rim light to separate model from background */}
+      <directionalLight
+        position={[10, 10, -10]}
+        intensity={0.9}
+        castShadow
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
+      />
+      <pointLight intensity={0.6} position={[0, 5, 10]} />
+
+      {/* 3D model */}
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
@@ -32,6 +49,7 @@ const Computers = ({ isMobile }) => {
 };
 
 const ComputersCanvas = () => {
+  // State to track if the device is mobile
   const [isMobile, setIsMobile] = useState(false);
 
   // Added a useEffect hook to detect screen size changes
