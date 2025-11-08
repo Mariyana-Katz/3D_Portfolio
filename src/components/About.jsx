@@ -7,6 +7,16 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motions";
 
+
+const ServiceCard = ({ index, title, icon }) => {
+  return (
+    <Tilt className="xs:w-[250px] w-full">
+      <motion.div
+      // Applying fadeIn animation with specific parameters
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+  
+></motion.div></Tilt>)}
+
 const About = () => {
   return (
     <>
@@ -27,6 +37,10 @@ const About = () => {
         turning ideas into functional, impactful solutions — let's create
         something amazing together!
       </motion.p>
+      <div className="mt-20 flex flex-wrap gap-10">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />))}
+      </div>
     </>
   );
 };
