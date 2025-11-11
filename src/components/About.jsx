@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motions";
+import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -60,4 +61,5 @@ const About = () => {
   );
 };
 
-export default About;
+// Wrapping the About component with SectionWrapper HOC for consistent styling and animation, passing the component and its section ID "about".
+export default SectionWrapper(About, "about");
