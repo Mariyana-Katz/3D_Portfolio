@@ -144,7 +144,7 @@ const experiences = [
   {
     title: "Software Developer in Training",
     company_name: "Zip Code Wilmington / Wilmington, DE",
-    icon: web,
+    icon: web, 
     iconBg: "#383E56",
     date: "Feb 2024 - May 2024",
     points: [
@@ -156,7 +156,7 @@ const experiences = [
   {
     title: "Software Developer intern",
     company_name: "Zip Code Wilmington / Wilmington, DE",
-    icon: web,
+    icon: web, 
     iconBg: "#E6DEDD",
     date: "Feb 2025 - Present",
     points: [
