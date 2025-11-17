@@ -10,6 +10,7 @@ const Tech = () => {
     <div className="flex flex-wrap flex-row justify-center gap-10">
       {technologies.map((technology) => (
         <div className="w-28 h-28" key={technology.name}>
+          {/*BallCanvas component to render each technology icon in a 3D ball. */}
           <BallCanvas icon={technology.icon} />
         </div>
       ))}
