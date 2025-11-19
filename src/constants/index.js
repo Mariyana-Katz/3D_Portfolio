@@ -14,10 +14,14 @@ import {
   java,
   spring,
   mysql,
+  postgresql,
   bootstrap,
   github,
   jobit,
   tripguide,
+  news2,
+  PlanetHabits,
+  Bakery,
 } from "../assets";
 
 export const navLinks = [
@@ -95,6 +99,8 @@ const technologies = [
   { name: "Spring", icon: spring },
 
   { name: "MySQL", icon: mysql },
+
+  { name: "PostgreSQL", icon: postgresql },
   {
     name: "figma",
     icon: figma,
@@ -149,65 +155,76 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "My Bakery website",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A bakery website that allows users to browse and order baked goods online. The website features a user-friendly interface, a variety of products, and a submission form. Built using HTML, CSS, Bootstrap and JavaScript for the frontend and Java, Spring Boot for the backend. PostgreSQL is used for the database to store product and order information.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Java",
+        color: "green-text-gradient",
+      },
+      { name: "spring boot", color: "green-text-gradient" },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Bakery,
+    source_code_link: "https://github.com/Mariyana-Katz",
+  },
+
+
+
+
+
+  {
+    name: "Planet Habits",
+    description:
+      "A habit-tracking web application that helps users build and maintain positive habits. Users can  track progress, and receive reminders. Built with React for the frontend and local storage for the backend.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: PlanetHabits,
+    source_code_link: "https://github.com/Mariyana-Katz",
+  },
+
+
+
+  {
+    name: "News App",
+    description:
+      "A news application that provides users with the latest news articles from various sources. Users can search for articles, filter by category, and read full articles. Built using React for the frontend and Java, Spring Boot for the backend.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "spring boot",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "java",
         color: "pink-text-gradient",
       },
     ],
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: news2,
+    source_code_link: "https://github.com/Mariyana-Katz",
   },
 ];
 
