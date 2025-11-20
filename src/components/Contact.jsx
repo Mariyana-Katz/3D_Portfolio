@@ -7,9 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motions";
 
 
-//JQgphMBkvUHYICTJk
-//template_aalym9p
-//service_1mds78r
+
 
 const Contact = () => {
   // Form state and ref for emailjs
@@ -36,6 +34,12 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+
+
+    //JQgphMBkvUHYICTJk
+//template_aalym9p
+//service_1mds78r
+
 // Send email using emailjs
     emailjs.send(
   "service_1mds78r",
@@ -59,7 +63,7 @@ const Contact = () => {
 .catch((error) => {
   setLoading(false);
   console.error("FAILED...", error);
-  alert("Ahh, something went wrong. Please try again.");
+  alert("Something went wrong. Please try again.");
 });
 
   };
