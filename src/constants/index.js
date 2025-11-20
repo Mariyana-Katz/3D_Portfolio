@@ -4,7 +4,6 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
@@ -17,8 +16,6 @@ import {
   postgresql,
   bootstrap,
   github,
-  jobit,
-  tripguide,
   news2,
   PlanetHabits,
   Bakery,
@@ -72,10 +69,7 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+
   {
     name: "Bootstrap",
     icon: bootstrap,
@@ -84,12 +78,10 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
-
   {
     name: "git",
     icon: git,
@@ -185,10 +177,6 @@ const projects = [
     source_code_link: "https://github.com/Mariyana-Katz",
   },
 
-
-
-
-
   {
     name: "Planet Habits",
     description:
@@ -202,8 +190,6 @@ const projects = [
     image: PlanetHabits,
     source_code_link: "https://github.com/Mariyana-Katz",
   },
-
-
 
   {
     name: "News App",

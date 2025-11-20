@@ -18,9 +18,6 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import news2 from "./tech/news2.jpg";
 import PlanetHabits from "./tech/PlanetHabits.png";
 import Bakery from "./tech/Bakery.png";
@@ -44,11 +41,8 @@ export {
   reactjs,
   bootstrap,
   tailwind,
-  typescript,
   spring,
   postgresql,
-  jobit,
-  tripguide,
   news2,
   PlanetHabits,
   Bakery,
