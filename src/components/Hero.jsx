@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import  styles  from "../styles";
+import styles from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I am <span className="text-[#915eff]"> Mariyana</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-1`}>
+          <p className={`${styles.heroSubText} mt-1 pb-4`}>
             {" "}
             Full-stack Software Developer with a background in customer-focused
             roles. Skilled in Java, React, and Spring Boot. Eager to contribute
