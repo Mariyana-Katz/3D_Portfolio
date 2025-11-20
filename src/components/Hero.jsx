@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I am <span className="text-[#915eff]"> Mariyana</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-1 pb-4`}>
+          <p className={`${styles.heroSubText} mt-1 mb-8`}>
             {" "}
             Full-stack Software Developer with a background in customer-focused
             roles. Skilled in Java, React, and Spring Boot. Eager to contribute
@@ -26,26 +26,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+  <ComputersCanvas />
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a href="#about">
-          {/* className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2"}*/}
-          <div>
-            {/* Animate the small circle to move up and down */}
-            {/* <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              // transition defines the timing and repetition of the animation
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
-            /> */}
-          </div>
-        </a>
+        <a href="#about"></a>
       </div>
     </section>
   );
