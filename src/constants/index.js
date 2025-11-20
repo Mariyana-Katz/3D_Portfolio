@@ -1,3 +1,4 @@
+import { j } from "maath/dist/misc-19a3ec46.esm";
 import {
   mobile,
   backend,
@@ -42,12 +43,12 @@ const services = [
     icon: web,
   },
   {
-    title: "React Developer",
-    icon: reactjs,
+    title: "Backend Developer",
+    icon: java,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "React Developer",
+    icon: reactjs,
   },
   {
     title: "Content Creator",
@@ -128,20 +129,11 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    testimonial: "",
+    name: "",
+    designation: "",
+    company: "",
+    image: "",
   },
 ];
 
