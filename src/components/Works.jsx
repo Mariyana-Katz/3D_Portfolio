@@ -73,7 +73,7 @@ const Works = () => {
     <>
       {/* Motion div for animating the section header. The textVariant function is used to define the animation. The variants are passed to the motion.div component. */}
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Projects</p>
+        <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
       <div>

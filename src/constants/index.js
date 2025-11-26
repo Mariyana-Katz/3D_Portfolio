@@ -101,19 +101,7 @@ const technologies = [
 ];
 
 const experiences = [
-  {
-    title: "Software Developer in Training",
-    company_name: "Zip Code Wilmington / Wilmington, DE",
-    icon: web,
-    iconBg: "#383E56",
-    date: "Feb 2024 - May 2024",
-    points: [
-      "	Completed 1,000+ hours of full-stack training (Java, Spring Boot, React, JS, TDD).",
-      "	Built and deployed end-to-end applications in Agile teams.",
-      "	Strengthened collaboration, problem-solving, and version control skills through team-based sprints and code reviews.",
-    ],
-  },
-  {
+    {
     title: "Software Developer intern",
     company_name: "Zip Code Wilmington / Wilmington, DE",
     icon: web,
@@ -125,6 +113,19 @@ const experiences = [
       "	Implemented updates through a CMS, ensuring consistency with client branding and communication guidelines.",
     ],
   },
+  {
+    title: "Software Developer in Training",
+    company_name: "Zip Code Wilmington / Wilmington, DE",
+    icon: web,
+    iconBg: "#383E56",
+    date: "Feb 2024 - May 2024",
+    points: [
+      "	Completed 1,000+ hours of full-stack training (Java, Spring Boot, React, JS, TDD).",
+      "	Built and deployed end-to-end applications in Agile teams.",
+      "	Strengthened collaboration, problem-solving, and version control skills through team-based sprints and code reviews.",
+    ],
+  }
+
 ];
 
 const testimonials = [
