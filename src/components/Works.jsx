@@ -13,6 +13,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_demo_link,
 }) => {
   return (
     // Motion div for animating the project card. The fadeIn function is used to define the animation. The variants are passed to the motion.div component.
@@ -26,7 +27,7 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[230px] cursor-pointer" onClick={() => window.open(live_demo_link, "_blank")}>
           <img
             src={image}
             alt={name}

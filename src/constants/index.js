@@ -101,7 +101,7 @@ const technologies = [
 ];
 
 const experiences = [
-    {
+  {
     title: "Software Developer intern",
     company_name: "Zip Code Wilmington / Wilmington, DE",
     icon: web,
@@ -124,8 +124,7 @@ const experiences = [
       "	Built and deployed end-to-end applications in Agile teams.",
       "	Strengthened collaboration, problem-solving, and version control skills through team-based sprints and code reviews.",
     ],
-  }
-
+  },
 ];
 
 const testimonials = [
@@ -168,6 +167,7 @@ const projects = [
     ],
     image: Bakery,
     source_code_link: "https://github.com/Mariyana-Katz",
+    live_demo_link: "https://cakesm.netlify.app/",
   },
 
   {
@@ -182,6 +182,7 @@ const projects = [
     ],
     image: PlanetHabits,
     source_code_link: "https://github.com/Mariyana-Katz",
+    live_demo_link: "https://planethabits1.netlify.app/",
   },
 
   {
